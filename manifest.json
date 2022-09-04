@@ -1,0 +1,28 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "contentscript.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "content_security_policy": "script-src 'self' https://cdn.inspectlet.com; object-src 'self';",
+   "description": "EmpireSpy For Shopify - Spy Tool For Dropshipping & Shopify",
+   "icons": {
+      "1024": "icons/icon-1024.png",
+      "128": "icons/icon-128.png",
+      "256": "icons/icon-256.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqFqebw0FpII5f5gRphiSmZ4j0Wlv8UJ4o2sCi2OMcC096Fw+L7+6Nv2PCrIn7VKxx77eMBzKy/l/nWMIo9lKcy/+WV6AmrDVTu5/hFsH1YKmjd9XAkaZKyyYG3T9rCqGjzVEes/KYGlWHfXRdMj5nlRSBgmTBrE0clTFQTFobxKHL4vVpzqnyGgdpN7lm/VK8IOD6riLKY9Khdy4I0EgNbnZRAvuuHchMsaox2GfnQBMP7Xh9CMDUBl5TUP+OQuIegHPclZjq+bgqi+o68eQbYfAinDIPW+z2f4RTeBtgTJDuDUIOpDG2F5ydXPj5bMoLHGL1gTuCqS9uGGCJzzqawIDAQAB",
+   "manifest_version": 2,
+   "name": "EmpireSpy - Shopify & Dropship Spy Tool",
+   "permissions": [ "identity", "identity.email", "tabs", "storage", "http://localhost/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.32",
+   "version_name": "2.32",
+   "web_accessible_resources": [ "windowscript.js", "assets/*", "windowPopup.html" ]
+}
